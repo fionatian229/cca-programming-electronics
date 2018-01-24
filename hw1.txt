@@ -38,6 +38,16 @@ function move(d, s) {
 move("down", 7)
 move("right", 5)
 move("up", 2)
-var firstColorSeen = getColor
+var p1Color1 = getColor
 move("right", 2)
-var secondColorSeen = getColor
+var p1Color2 = getColor
+
+// Puzzle 2
+move("down", 6)
+move("right", 3)
+move("up", 2)
+move("right", 2)
+move("down", 1)
+var p2Color1 = getColor
+move("down", 2)
+var p2Color2 = getColor
