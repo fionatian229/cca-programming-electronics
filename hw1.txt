@@ -52,7 +52,7 @@ var p2Color1 = getColor
 move("down", 2)
 var p2Color2 = getColor
 
-/ Puzzle 3
+// Puzzle 3
 move(“down”, 2)
 var p3Color1 = getColor
 
