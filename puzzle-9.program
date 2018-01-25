@@ -1,0 +1,66 @@
+function move(d, s) {
+	// d means movement direction
+	// s means steps to move
+
+	var steps = 0;
+
+	if (d == "up") {
+		while (steps < s) {
+			up
+			steps = steps + 1
+		} 
+	}
+
+	if (d == "down") {
+		while (steps < s) {
+			down
+			steps = steps + 1
+		} 
+	}
+
+	if (d == "left") {
+		while (steps < s) {
+			left
+			steps = steps + 1
+		} 
+	}
+
+	if (d == "right") {
+		while (steps < s) {
+			right
+			steps = steps + 1
+		} 
+	}
+}
+
+// Puzzle 9
+var borderColor = “pink”
+var borderLength = 10
+var stepCounter = 0
+
+while (stepCounter < borderLength) {
+    move(“right”, 1)
+    setColor(“borderColor”)
+    steps = steps + 1    
+}
+
+steps = 0
+while (steps < borderLength) {
+    move(“down”, 1)
+    setColor(“borderColor”)
+    steps = steps + 1    
+}
+
+steps = 0
+while (steps < borderLength) {
+    move(“left”, 1)
+    setColor(“borderColor”)
+    steps = steps + 1    
+}
+
+steps = 0
+while (steps < borderLength) {
+    move(“up”, 1)
+    setColor(“borderColor”)
+    steps = steps + 1    
+}
