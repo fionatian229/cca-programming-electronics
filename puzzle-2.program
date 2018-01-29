@@ -39,6 +39,4 @@ move("right", 3)
 move("up", 2)
 move("right", 2)
 move("down", 1)
-var p2Color1 = getColor
 move("down", 2)
-var p2Color2 = getColor

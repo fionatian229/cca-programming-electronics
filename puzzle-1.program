@@ -38,6 +38,4 @@ function move(d, s) {
 move("down", 7)
 move("right", 5)
 move("up", 2)
-var p1Color1 = getColor
 move("right", 2)
-var p1Color2 = getColor
