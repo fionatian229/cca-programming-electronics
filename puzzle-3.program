@@ -6,54 +6,40 @@ function move(d, s) {
 
 	if (d == "up") {
 		while (steps < s) {
-			up
-			steps = steps + 1
+			up();
+			steps = steps + 1;
 		} 
 	}
 
 	if (d == "down") {
 		while (steps < s) {
-			down
-			steps = steps + 1
+			down();
+			steps = steps + 1;
 		} 
 	}
 
 	if (d == "left") {
 		while (steps < s) {
-			left
-			steps = steps + 1
+			left();
+			steps = steps + 1;
 		} 
 	}
 
 	if (d == "right") {
 		while (steps < s) {
-			right
-			steps = steps + 1
+			right();
+			steps = steps + 1;
 		} 
 	}
 }
 
 
 // Puzzle 3
-move(“down”, 2)
-var p3Color1 = getColor
+move("down", 2);
+var p3Color1 = getColor();
 
-if (p3Color1 == “blue”) { 
-    move(“down”, 3)
-    move(“right”, 2)
-}
-
-if (p3Color1 == “yellow”) { 
-    move(“down”, 3)
-    move(“right”, 2)
-}
-
-if (p3Color1 == “pink”) { 
-    move(“down”, 3)
-    move(“right”, 2)
-}
-
-if (setColor(p3Color1)) {
-    move(“right”, 2)
-    move(“up”, 1)    
-}
+move("down", 3);
+move("right", 2);
+setColor(p3Color1);
+move("right", 2);
+move("up", 1);
