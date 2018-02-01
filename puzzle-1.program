@@ -6,28 +6,28 @@ function move(d, s) {
 
 	if (d == "up") {
 		while (steps < s) {
-			up
+			up();
 			steps = steps + 1
 		} 
 	}
 
 	if (d == "down") {
 		while (steps < s) {
-			down
+			down();
 			steps = steps + 1
 		} 
 	}
 
 	if (d == "left") {
 		while (steps < s) {
-			left
+			left();
 			steps = steps + 1
 		} 
 	}
 
 	if (d == "right") {
 		while (steps < s) {
-			right
+			right();
 			steps = steps + 1
 		} 
 	}
