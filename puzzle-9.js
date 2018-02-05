@@ -89,10 +89,10 @@ function closed_rectangle(x, y, width, height, color1, color2) {
     // then use setColor with color2 to fill in the entire inside of the rectangle 
     
     open_rectangle(x, y, width, height, color1);
-
+        
     // draw the rectangle inside
-    move('right', x + 1);
-    move('down', y + 1);
+    move('right', 1);
+    move('down', 1);
     var rows = height - 1;
     var columns = width - 1;
     
@@ -106,7 +106,7 @@ function closed_rectangle(x, y, width, height, color1, color2) {
             //draw columns of the same row
             setColor(fillColor);
             move('right', 1);    
-            column++;
+            column = column + 1;
         }
         move("down", 1);
         move("left", columns);
@@ -117,10 +117,11 @@ function closed_rectangle(x, y, width, height, color1, color2) {
 
 }
 
-open_rectangle(8,8,7,8,"blue");
-// move cursor to the next starting point
-move("right", 2);
-move("down", 12);
-closed_rectangle(10,20,4,5,"red","blue");
+open_rectangle(8, 8, 7, 8, "blue");
+
+closed_rectangle(10, 20, 4, 5, "red", "blue");
+
+
+
 
 
